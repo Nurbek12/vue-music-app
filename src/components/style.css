@@ -1,0 +1,73 @@
+.swiper-container {
+    width: 93%;
+    display: flex;
+    padding-top: 30px;
+    margin-left: 10px;
+}
+.swiper-container .swiper-wrapper{
+    width: 100%;
+    display: flex;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 120px;
+    padding: 0 5px;
+    margin: 2px;
+}
+.swiper-slide img {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.swiper-slide .content {
+    position: relative;
+    font-size: 0.9em;
+    color: #fff;
+    font-weight: lighter;
+    line-height: 15px;
+}
+.swiper-slide .content span {
+    position: relative;
+    font-size: 0.7em;
+    color: #aaa;
+}
+.swiper-wrapper{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: proximity;
+    width: 100%;
+    padding:0 1px;
+}
+.swiper-wrapper::-webkit-scrollbar{
+    height: 0;
+}
+.swiper-slide{
+    cursor: pointer;
+}
+.btn{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    cursor: pointer;
+}
+.btn.pr{
+    top: 50%;
+    transform: translate(0px,-50%);
+    left: 13px;
+}
+.btn.nx{
+    top: 50%;
+    transform: translate(0px,-50%);
+    right: 13px;
+}
